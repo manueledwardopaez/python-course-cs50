@@ -8,7 +8,7 @@ try:
     amountBTC = float(sys.argv[1])
     print(sys.argv[1])
 
-    r = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=f45763b2220265bc789655b8fcc24fb9a5e4f76b0c7e5131a09146fd57e95262")
+    r = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=apiKey")
     resp = r.json()
     priceUsd = resp['data']['priceUsd']
     print(priceUsd)
