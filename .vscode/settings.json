@@ -3,6 +3,7 @@
         "./05-unit-tests",
         "./01-Conditionals",
         "./02-loops",
-        "./03-exceptions"
+        "./03-exceptions",
+        "./07-Regular-Expressions"
     ]
 }
