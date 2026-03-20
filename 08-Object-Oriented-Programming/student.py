@@ -4,6 +4,7 @@ class Student:
         self.name       = name
         self.house      = house
 
+    # Method that explains this class in a user friendly way. 
     def __str__(self):
         return f"{self.name} from {self.house}"
     
@@ -27,20 +28,20 @@ class Student:
             raise ValueError("Invalid house")
         self._house = house
 
+    @classmethod
+    def get(cls):
+        name  = input("Name: ")
+        house = input("House: ")
+        return cls(name, house)
+
 
 
 def main():
-    student = get_student()
+    student = Student.get()
     print(student)
 
 
-def get_student():
-    name     = input("Name: ")
-    house    = input("House: ")
-    try:
-        return Student(name, house)
-    except ValueError as e:
-        print(e)
+    
 
 if __name__ == "__main__":
     main()
